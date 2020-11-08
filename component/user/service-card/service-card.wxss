@@ -1,0 +1,59 @@
+/* component/user/service-card/service-card.wxss */
+.no-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 380rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #8C8C8C;
+    text-align: center;
+}
+.service-card {
+    margin-bottom: 32rpx;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;  
+    width: 670rpx;
+    height: 316rpx;
+    border-radius: 8rpx;
+}
+.card {
+    padding: 32rpx;
+}
+.card .card-title {
+    font-family: SFProText-Medium;
+    font-size: 32rpx;
+    color: #404040;
+    font-weight: bold;
+    width: 606rpx;
+}
+.card .card-content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 32rpx;
+    margin-top: 32rpx;
+    border-top: 2rpx solid #f2f2f2;
+}
+.card .card-cover image {
+    width: 232rpx;
+    height: 142rpx;
+    border-radius: 8rpx;
+    margin-right: 32rpx;
+}
+.card .card-info {
+    height: 142rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #8C8C8C;
+    max-width: 300rpx;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+

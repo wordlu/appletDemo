@@ -1,0 +1,12 @@
+<!--component/common/navigation-bar/navigation-bar.wxml-->
+<view class='bar'>
+    <view class='title'>
+      <block wx:if="{{noback == 'true'}}"></block>
+      <block wx:else>
+          <view class='back-icon' bindtap='backTo'>
+              <image src='{{backIcon}}'></image>
+          </view>
+      </block>
+        <text>{{title}}</text>
+    </view>
+</view>

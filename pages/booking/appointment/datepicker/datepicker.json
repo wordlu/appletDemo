@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/component/common/navigation-bar/navigation-bar",
+    "navbar": "/component/common/nav-bar/nav-bar"
+  },
+    "backgroundColor": "#80AEFF",
+    "backgroundTextStyle": "dark"
+}

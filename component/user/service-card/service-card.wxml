@@ -1,0 +1,24 @@
+<!--component/user/service-card/service-card.wxml-->
+<block wx:if='{{noValue}}'>
+    <view class='no-value'>
+        <view>还没有服务</view>
+        <view>去“发现”心仪的服务吧</view>
+    </view>
+</block>
+<block wx:else>
+    <view class='service-card' wx:for="{{lists}}" bindtap="serviceDetail"  data-appliesid="{{item.id}}">
+        <view class='card'>
+            <text class='card-title'>{{item['reservable-title']}}</text>
+            <view class='card-content'>
+                <view class='card-cover'>
+                    <image src='{{item.dealImage}}'></image>
+                </view>
+                <view class='card-info'>
+                    <text>{{item['yard-address']}}</text>
+                    <text>{{item.deal_expect_time}}</text>
+                    <text>¥ {{item['reservable-price']}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

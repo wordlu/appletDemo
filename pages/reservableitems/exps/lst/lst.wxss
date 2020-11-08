@@ -1,0 +1,11 @@
+.notice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.notice text {
+  margin-top: 32rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #A6A6A6;
+}

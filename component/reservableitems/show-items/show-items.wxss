@@ -1,0 +1,53 @@
+/* component/reservableitems/show-items/show-items.wxss */
+
+.explan {
+  height: 72rpx;
+  background: #F8FBFF;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.explan image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+  margin-left: 32rpx;
+}
+.explan text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #737373;
+  letter-spacing: 2rpx;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.about-margin {
+	/* margin-top: 98rpx; */
+	margin-left: 40rpx;
+	margin-right: 40rpx;
+  /* padding-top: 64rpx; */
+  /* padding-bottom: 64rpx; */
+}
+.content .title {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #0D0D0D;
+
+  margin-bottom: 26rpx;
+}
+.content .lists {
+  display: flex;
+  flex-direction: column;
+}
+.lists .list {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #404040;
+
+  margin-bottom: 16rpx;
+}

@@ -1,0 +1,104 @@
+/* pages/user/user.wxss */
+
+.navigator-hover {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.content-page {
+  padding: 48rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-area {
+  margin-bottom: 48rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/img_user-card-bg.png");
+  width: 670rpx;
+  height: 302rpx;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20rpx;
+}
+
+.head-area .head-img {
+  margin-left: 50rpx;
+  margin-right: 32rpx;
+  width: 112rpx;
+  height: 112rpx;
+}
+
+.head-img {
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+}
+
+.headView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230rpx;
+  width: 230rpx;
+}
+
+.headView .icon {
+  position: absolute;
+  height: 112rpx;
+  width: 112rpx;
+  border-radius: 50%;
+  border: 25rpx solid #afd3fc;
+}
+
+.head-area .head-name {
+  font-family: PingFangSC-Medium;
+  font-size: 40rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.list-area {
+  border-top: 1rpx solid #f2f2f2;
+  padding-top: 48rpx;
+}
+
+.list-area .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 88rpx;
+}
+
+.list .enter-icon image {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.list .name {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #262626;
+  font-weight: bold;
+}
+
+button.list {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background-color: #fff;
+  outline: none;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #262626;
+  text-align: left;
+  font-weight: bold;
+}
+
+button.list::after {
+  border: none;
+}

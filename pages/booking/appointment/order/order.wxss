@@ -1,0 +1,276 @@
+/* pages/booking/appointment/order/order.wxss */
+
+page {
+    height: 100%;
+}
+.content-page {
+  position: relative;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    min-height: 100%;
+    background-color: #f7f8fa;
+}
+.reservable {
+    padding-top: 40rpx;
+    height: 422rpx;
+    background-color: #80AEFF;
+}
+.class-info {
+    padding-left: 40rpx;
+    padding-right: 40rpx; 
+    padding-bottom: 32rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2rpx solid rgba(255, 255, 255, 0.15);
+}
+.class-info .name {
+    display: flex;
+    flex-direction: column;
+    width: 520rpx;
+}
+.name  .class-name {
+    margin-bottom: 16rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 36rpx;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.name .yard-name {
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #FFFFFF;
+}
+.class-info .price {
+    font-family: PingFangSC-Medium;
+    font-size: 28rpx;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.time {
+    padding-left: 40rpx;
+    padding-right: 40rpx; 
+    padding-top: 32rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #FFFFFF;
+}
+.add-child-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.childList {
+    margin-top: -55rpx;
+    display: flex;
+    flex-direction: column;
+    width: 670rpx;
+    min-height: 110rpx;
+    border-radius: 8rpx;
+    background-color: #ffffff;
+}
+.childList .btn-name {
+    margin: 33rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 32rpx;
+    color: #262626;
+    font-weight: bold;
+}
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 32rpx 32rpx 0 32rpx;
+}
+.radio-group radio {
+    margin-right: 32rpx;
+}
+.radio-group .radio {
+    width: 100%;
+}
+.add {
+    margin-bottom:32rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #80AEFF;
+    text-align: center;
+    font-weight: bold;
+}
+.kid {
+    margin-bottom:32rpx;
+    padding-bottom: 32rpx;
+    border-bottom: 2rpx solid #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.kid .name {
+    margin-right: 16rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #262626;
+    font-weight: bold;
+    width: 90rpx;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.kid .age {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #8C8C8C;
+}
+.add-child {
+    margin-top: -55rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 670rpx;
+    height: 110rpx;
+    border-radius: 8rpx;
+    background-color: #ffffff;
+}
+.add-child .btn-name {
+    margin: 32rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 32rpx;
+    color: #262626;
+    font-weight: bold;
+}
+.add-child .btn-icon image {
+    margin-right: 32rpx;
+    width: 44rpx;
+    height: 44rpx;
+}
+.note {
+    padding-top: 36rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 120rpx;
+}
+.note image {
+    margin-right: 8rpx;
+    width: 44rpx;
+    height: 44rpx;
+}
+.note text {
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #8C8C8C;
+}
+.btn-area {
+  position: fixed;
+  bottom: 80rpx;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 590rpx;
+    height: 96rpx;
+    background: #80AEFF;
+    border-radius: 46rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    /* position: fixed; */
+    /* bottom: 80rpx; */
+}
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+/*content*/
+.drawer_box {
+  top:25%;
+  width: 80%;
+  min-height: 410rpx;
+  margin: 10%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1001;
+  background: #fff;
+  /* margin-top: -60%; */
+  border-radius: 6rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drawer_box .title {
+    margin: 48rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #262626;
+    font-weight: bold;
+}
+.drawer_box input {
+    margin: 0 48rpx;
+    width: 100%;
+    height: 86rpx;
+    background: #F7F8FA;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #595959;
+    text-align: center;
+}
+.drawer_box .submit-tel {
+    margin: 48rpx;
+    width: 496rpx;
+    height: 88rpx;
+    background: #80AEFF;
+    border-radius: 44rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 32rpx;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.error-note {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.model {
+    margin-top: -650rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 590rpx;
+    height: 104rpx;
+    opacity: 0.85;
+    background: rgba(58, 83, 125, 0.85);
+    border-radius: 8rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #FFFFFF;
+    text-align: center;
+}

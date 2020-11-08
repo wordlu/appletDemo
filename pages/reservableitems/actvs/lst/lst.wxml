@@ -1,0 +1,8 @@
+<navigation-bar title='{{bar}}' class="navigationBar {{android?'android':'nav'}} {{iosX?'iosx':''}}"></navigation-bar>
+<view class="{{android?'top_blank_android':'top_blank_nav'}} {{iosX?'top_blank_iosx':''}}"></view>
+<view class="cls-lst">
+    <acti-lst isList="true" exps="{{actvs}}"></acti-lst>
+</view>
+<view class='notice'>
+  <text>-更多精彩即将上线-</text>
+</view>

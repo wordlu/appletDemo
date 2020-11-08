@@ -1,0 +1,7 @@
+<!--pages/user/myService/myService.wxml-->
+<view class='content-page' style='height:{{pageContantHeight}}rpx;padding-top:{{customNavBarHeight}}rpx'>
+    <navbar noback='false' title='{{bar}}' height='{{customNavBarHeight}}'></navbar>
+    <view class='card-list'>
+        <service-card list='{{list}}' ></service-card>
+    </view>
+</view>

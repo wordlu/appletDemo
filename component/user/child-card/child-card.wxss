@@ -1,0 +1,49 @@
+/* component/user/child-card/child-card.wxss */
+.no-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 380rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #8C8C8C;
+    text-align: center;
+}
+.child-card {
+    padding-bottom: 32rpx;
+    padding-top: 32rpx;
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.base-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.base-info .name {
+    margin-right: 48rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 28rpx;
+    color: #262626;
+    font-weight: bold;
+    width: 112rpx;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.base-info .age {
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #595959;
+}
+.age text {
+    margin-right: 32rpx;
+}
+.enter image {
+    width: 44rpx;
+    height: 44rpx;
+}

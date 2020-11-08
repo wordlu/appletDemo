@@ -1,0 +1,112 @@
+/* component/activity-banner/acti-btns/acti-btns.wxss */
+
+.actibtn {
+  z-index: 100;
+}
+
+.actibtn .actibtn-bkg {
+	/* background-image: linear-gradient(-90deg, #9DC0FF 0%, #6E9CEE 100%); */
+	box-shadow: 0 5px 10px 0 rgba(52,96,201,0.55);
+  background-image: linear-gradient(90deg, #9DC0FF 0%, #6E9CEE 100%);
+  border-radius: 8rpx;
+	width: 670rpx;
+	height: 96rpx;
+
+	margin-top: 0;
+	margin-bottom:0;
+}
+
+.actibtn .content-item {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.actibtn .content-item-mid {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.actibtn .content-row {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: flex-start;
+
+  padding-bottom: 40rpx;
+}
+
+.actibtn .content-row-mid {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+  background: #fff;
+}
+
+.actibtn .content-row-span {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+
+  padding-top: 28rpx;
+  padding-bottom: 28rpx;
+}
+
+.actibtn .acti-price {
+	/* font-family: SFProText-Bold;
+	font-size: 40rpx;
+	color: #fff; */
+	font-family:PingFangSC-Medium;
+	font-weight:700;
+	font-size:28rpx;
+	color:#fff;
+	/* margin-top:8rpx; */
+	line-height: 40rpx;
+	margin-left: 32rpx;
+	width: 200rpx;
+	/* overflow: visible;
+	visibility: visible;
+	width: 200rpx; */
+}
+
+.actibtn .acti-price-des {
+	font-family: PingFangSC-Regular;
+	font-size: 22rpx;
+	color: #fff;
+
+	margin-top: 18rpx;
+}
+
+.actibtn .acti-nav {
+	font-family: PingFangSC-Medium;
+  font-weight: 700;
+	font-size: 28rpx;
+	color: #fff;
+	line-height: 40rpx;
+	/* margin-top: 8rpx; */
+}
+
+
+.actibtn .acti-nav-arrow {
+	width: 16rpx;
+	height: 28rpx;
+
+	margin-left: 16rpx;
+	margin-right: 32rpx;
+	margin-top: 6rpx;
+}
+.btn-bg {
+  position: absolute;
+
+  width: 670rpx;
+	height: 96rpx;
+
+  top: 0;
+
+ 
+}

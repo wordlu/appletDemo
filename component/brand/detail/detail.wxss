@@ -1,0 +1,203 @@
+/* component/brand/brand-detail/brand-detail.wxss */
+.content-page {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 48rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-bottom: 80rpx;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 48rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.head .logo {
+  background: #FFFFFF;
+  box-shadow: 0 4px 10px 0 rgba(173,186,222,0.37);
+  border-radius: 8rpx;
+
+  width: 160rpx;
+  height: 160rpx;
+
+  margin-bottom: 48rpx;
+}
+.head .headline {
+  font-family: SFProText-Medium;
+  font-size: 40rpx;
+  color: #404040;
+  font-weight: 700;
+
+  margin-bottom: 16rpx;
+}
+.head .des {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #404040;
+  text-align: center;
+  margin-bottom: 16rpx;
+}
+.head .lists {
+  display: flex;
+  flex-direction: row;
+}
+.lists .separate {
+  margin: 0 18rpx;
+  font-weight: 200;
+  color: f2f2f2;
+}
+.lists .list {
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #A6A6A6;
+}
+.list view {
+  width:140rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 48rpx;
+}
+.time .content {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #404040;
+  margin-bottom: 48rpx;
+}
+.title {
+  font-family: SFProText-Medium;
+  font-size: 32rpx;
+  color: #0d0d0d;
+  font-weight: 700;
+
+  margin-bottom: 49rpx;
+  margin-right: 32rpx;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+}
+.story .content {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #404040;
+
+  padding-bottom: 48rpx;
+  margin-bottom: 49rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+}
+.team .content {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #404040;
+
+  padding-bottom: 48rpx;
+  margin-bottom: 49rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.achievement {
+  display: flex;
+  flex-direction: column;
+}
+.achievement .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  padding-bottom: 48rpx;
+  margin-bottom: 48rpx;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+.achievement .content .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-right: 80rpx;
+}
+.achievement .content .list image {
+  margin-bottom: 12rpx;
+  width: 184rpx;
+  height: 122rpx;
+}
+.achievement .content .list .name {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #A6A6A6;
+  text-align: center;
+}
+.attest {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 49rpx;
+}
+.attest .content {
+  display: flex;
+  flex-direction: row;
+}
+.attest .content .list {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 80rpx;
+}
+.attest .content .list image {
+  background: #FFFFFF;
+  width: 186rpx;
+  height: 122rpx;
+
+  margin-bottom: 16rpx;
+}
+.attest .content .list .name {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #A6A6A6;
+  text-align: center;
+}
+.tags-area view {
+  width:140rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.achievement .achieve-list {
+  margin-bottom:48rpx;
+  display: flex;
+  flex-direction: row;
+}
+.img-area {
+  min-width:260rpx;
+  min-height:160rpx;
+}
+.achieve-img {
+  width:260rpx;
+  height:160rpx;
+  background:#ddd;
+  border-radius:8rpx;
+}
+.achieve-content {
+  font-family:PingFangSC-Regular;
+  font-size:28rpx;
+  color:#404040;
+  margin-left: 32rpx;
+  height: 160rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}

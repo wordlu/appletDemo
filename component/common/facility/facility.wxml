@@ -1,0 +1,30 @@
+<!--component/common/facility/facility.wxml-->
+<view class='content-page'>
+    <text class='subtitle'>校区设施</text>
+
+    <view class="content-row">
+      <block wx:for="{{facilities}}" wx:for-index="idx" wx:for-value="item">
+        <block wx:if="{{idx < 4}}">
+          <view class="c-loc-facility-item content-item">
+            <view class="content-item">
+              <view class="content-align-center" >
+                <image src="{{item.image}}"></image>
+              </view>
+              <text>{{item.name}}</text> 
+            </view>
+          </view>
+        </block>				
+			</block>
+	
+		<block wx:if="{{facilities.length > 4}}">
+            <view class="c-loc-facility-item content-item">
+					<view class="content-item" bindtap="moreFacility">
+						<view class="content-align-center">
+							<text class=".c-loc-facility-more-num">+{{facilities.length - 3}}</text> 
+						</view>
+            <text class=".c-loc-facility-more">更多</text> 
+          </view>
+        </view>
+      </block>
+		</view>
+  </view>

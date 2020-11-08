@@ -1,0 +1,45 @@
+/* component/reservableitems/x-scroll/x-scroll.wxss */
+.content-page {
+  padding-top: 49rpx;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin-bottom: 32rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #0D0D0D;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+	justify-content: flex-start;
+  align-items: flex-start;
+}
+.content .list {
+  margin-right: 16rpx;
+  /* background: #000; */
+  /* max-height: 406rpx; */
+  min-width: 280rpx;
+  border-radius: 8rpx;
+}
+.content .list .list-detail{
+  min-height: 174rpx;
+  max-width: 280rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8rpx;
+  background-color: #ddd;
+}
+.content .list .title {
+  margin-top: 26rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #A6A6A6;
+}

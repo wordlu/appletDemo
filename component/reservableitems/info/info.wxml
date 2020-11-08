@@ -1,0 +1,46 @@
+<!--component/classes/cls-info/cls-info.wxml-->
+<view class='content-page'>
+  <!-- <view class='sort'>{{exp.sessioninfo.category.title}}</view>
+  <view class='name'>
+    <text>{{exp.sessioninfo.title}}</text>
+  </view> -->
+  <!-- <image class='share' src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/icon_share.png'></image> -->
+  <view class='lists'>
+    <view class='list'>
+      <view class='img-area'>
+        <image class='img' src='{{img1}}'></image>
+      </view>
+      <block wx:if="{{exp.sessioninfo.hasAge}}">
+        <view class='des'>{{exp.sessioninfo.alb}}-{{exp.sessioninfo.aub}} 岁</view>
+      </block>
+      <block wx:else>
+        <view class='des'>不限年龄</view>
+      </block>
+    </view>
+    <view class='list'>
+       <view class='img-area'>
+        <image class='img' src='{{img2}}'></image>
+      </view>
+      <block wx:if="{{exp.sessioninfo.hasLenght}}">
+        <view class='des'>{{exp.sessioninfo.length}}分钟</view>
+      </block>
+      <block wx:else>
+        <view class='des'>不限时长</view>
+      </block>
+    </view>
+    <view class='list'>
+       <view class='img-area'>
+        <image class='img' src='{{img3}}'></image>
+      </view>
+      <view class='des'>{{exp.sessioninfo.yardname}}</view>
+      <image class='icon-arrow' src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/chevron-right%20s%402x.png'></image>
+    </view>
+    <view class='list'>
+      <view class='img-area'>
+       <image class='img' src='{{img4}}'></image>
+      </view>
+      <view class='des'>{{exp.sessioninfo.phone}}</view>
+      <image class='icon-arrow' src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/chevron-right%20s%402x.png'></image>
+    </view>
+  </view>
+</view>

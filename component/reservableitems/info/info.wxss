@@ -1,0 +1,88 @@
+/* component/classes/cls-info/cls-info.wxss */
+.content-page {
+  height: auto;
+  padding-right: 40rpx;
+  padding-left: 40rpx;
+  padding-top: 48rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -48rpx;
+  z-index: 2;
+  background-color: #fff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.sort {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #A6A6A6;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 66rpx;
+}
+.name text {
+  font-family: PingFangSC-Medium;
+  font-size: 40rpx;
+  color: #0D0D0D;
+}
+.name .share {
+  width: 40rpx;
+  height: 40rpx;
+}
+.lists {
+  display: flex;
+  flex-direction: column;
+}
+.lists .list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 32rpx;
+}
+.img-area {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 32rpx;
+}
+.list .img {
+  width: 44rpx;
+  height: 44rpx;
+}
+.list .des {
+  width: 85%;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #404040;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.tags .tag {
+  background: #E0F3CF;
+  border-radius: 4rpx;
+  width: 144rpx;
+  height: 48rpx;
+
+  margin-right: 32rpx;
+
+  font-family: SFProText-Regular;
+  font-size: 28rpx;
+  color: #519629;
+  line-height: 48rpx;
+  text-align: center;
+}
+.icon-arrow {
+  width: 44rpx;
+  height: 44rpx;
+}

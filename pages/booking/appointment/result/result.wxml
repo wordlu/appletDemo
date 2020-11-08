@@ -1,0 +1,48 @@
+<!--pages/booking/appointment/result/result.wxml-->
+<!-- <navigation-bar title='{{bar}}' reLaunch='{{reLaunch}}' class="navi {{android?'android':'nav'}} {{iosX?'iosx':''}}"></navigation-bar> -->
+<view class='content-page' style='height:{{pageContantHeight}}rpx;padding-top:{{customNavBarHeight}}rpx'>
+  <!-- <view class="{{android?'top_blank_android':'top_blank_nav'}} {{iosX?'top_blank_iosx':''}}"></view> -->
+  <navbar noback='false' title='{{bar}}' iconColor='1' bgColor='#80AEFF' color='#fff' reLaunch='{{reLaunch}}' height='{{customNavBarHeight}}' backtoAppliesList='{{backtoAppliesList}}'></navbar>
+
+  <view class='content-padding'>
+    <view wx:if='{{backtoAppliesList == 0}}' class='success-info'>
+      <view class='success-icon'>
+        <image src='{{successIcon}}'></image>
+      </view>
+      <view class='success-text'>提交成功</view>
+      <view class='success-note'>我们将尽快与您联系</view>
+    </view>
+    <view class='info-card'>
+      <view class='title'>{{reservable.title}}</view>
+      <view class='semi-circle'>
+        <view class='semi-circle-left'></view>
+        <view class='semi-circle-right'></view>
+      </view>
+      <view class='time-title'>预计参与时间</view>
+      <view class='time'>{{reservable.dealdate}}</view>
+    </view>
+    <view class='list-card'>
+      <view class='list-info'>
+        <view class='title-area'>
+          <view class='title'>{{reservable.yard.title}}</view>
+          <view class='address'>{{reservable.yard.address}}</view>
+        </view>
+        <view class='add-icon'>
+          <image src='{{mapIcon}}'></image>
+        </view>
+      </view>
+      <view class='note'>
+        <view class='note-icon'>
+          <image src='{{noteIcon}}'></image>
+        </view>
+        <view class='note-text'>注意事项：现场付费</view>
+      </view>
+      <view class='phone' data-phone="{{reservable.yard['service-contact']}}" bindtap='callService'>
+        <view class='phone-icon'>
+          <image src='{{callIcon}}'></image>
+        </view>
+        <view class='phone-text'>联系客服</view>
+      </view>
+    </view>
+  </view>
+</view>

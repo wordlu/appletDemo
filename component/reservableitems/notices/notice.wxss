@@ -1,0 +1,41 @@
+/* component/classes/cla-notices/cla-notice.wxss */
+.content-page {
+  height: auto;
+  /* padding-right: 40rpx;
+  padding-left: 40rpx; */
+  padding-top: 48rpx;
+  padding-bottom: 48rpx;
+}
+.bring {
+  margin-bottom: 66rpx;
+  display: flex;
+  flex-direction: column;
+ }
+.title-area {
+  display: flex;
+  flex-direction: row;
+}
+.title-area .title-img {
+  margin-right: 16rpx;
+  width: 44rpx;
+  height: 44rpx;
+}
+.title-area .title-text {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  line-height:46rpx;
+  color: #A6A6A6;
+}
+.list {
+  margin-left: 60rpx;
+}
+.list text {
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #8C8C8C;
+}
+.list .name {
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #8C8C8C;
+}

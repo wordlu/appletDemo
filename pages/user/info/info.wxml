@@ -1,0 +1,36 @@
+<!--pages/user/user.wxml-->
+<!-- <navigation-bar title='{{bar}}' bindtap='backToList' class="navigationBar {{android?'android':'nav'}} {{iosX?'iosx':''}}"></navigation-bar> -->
+<view class='content-page' style='height:{{pageContantHeight}}rpx;padding-top:{{customNavBarHeight}}rpx'>
+    <!-- <view class="{{android?'top_blank_android':'top_blank_nav'}} {{iosX?'top_blank_iosx':''}}"></view> -->
+    <navbar noback='true' title='{{bar}}' height='{{customNavBarHeight}}'></navbar>
+    <view class='head-area'>
+        <view class='headView'>
+            <!-- <image src='{{headImg}}'></image> -->
+            <open-data class='icon' mode='aspectFit' type="userAvatarUrl"></open-data>
+            <view class='icon'/>
+        </view>
+        <!-- <view >{{headName}}</view> -->
+        <open-data type="userNickName" lang="zh_CN" class='head-name'></open-data>  
+    </view>
+    <view class='list-area'>
+        <navigator  wx:for="{{list}}" url='{{item.detail}}' class='list'>
+            <view class='name'>{{item.name}}</view>
+            <view class='enter-icon'>
+                <image src="{{icon_enter}}"></image>
+            </view>
+        </navigator>
+        <button class='list recommend' open-type='share' >
+            <text >推荐给朋友</text>
+            <!-- <view class='enter-icon'>
+                <image src="{{icon_enter}}"></image>
+            </view> -->
+        </button>
+        <button class='list recommend' bindtap='phoneCall'>
+            <text >联系客服</text>
+            <!-- <view class='enter-icon'>
+                <image src="{{icon_enter}}"></image>
+            </view> -->
+        </button>
+        <!-- <button class='btn btn-simple' bindtap='phoneCall'>联系客服</button> -->
+    </view>
+</view>

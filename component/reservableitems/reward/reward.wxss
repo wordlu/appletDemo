@@ -1,0 +1,38 @@
+/* component/classes/cla-reward/cla-reward.wxss */
+.content-page {
+  height: auto;
+  padding-right: 40rpx;
+  padding-left: 40rpx;
+  padding-top: 32rpx;
+}
+.reward {
+  padding: 32rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8rpx;
+  background-color: #f4f9ff;
+  
+}
+.reward .reward-img {
+  margin-right: 32rpx;
+  width: 64rpx;
+  height: 64rpx;
+}
+.reward-content {
+  display: flex;
+  flex-direction: column;
+  
+}
+.reward-content .title {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #404040;
+}
+.reward-content .reward-list .list-dot {
+  margin-right: 10rpx;
+}
+.reward-content .reward-list text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #404040;
+}

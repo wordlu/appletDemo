@@ -1,0 +1,74 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.title-area {
+    margin-bottom: 64rpx;
+    display: flex;
+    flex-direction: column;
+}
+.title-area .title {
+    margin-bottom: 8rpx;
+    font-family: PingFangSC-Medium;
+    font-weight: bold;
+    font-size: 32rpx;
+    color: #262626;
+}
+.title-area .subtitle {
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #8C8C8C;
+}
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+/*content*/
+.drawer_box {
+  /* width: 670rpx; */
+  width: 90%;
+  height: 690rpx;
+  margin: 5%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1001;
+  background: #fff;
+  /* margin-top: -60%; */
+  border-radius: 6rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-content {
+    padding: 32rpx 80rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-logo {
+    width: 76rpx;
+    height: 32rpx;
+}
+.slogan {
+    margin-top: 176rpx;
+    margin-bottom: 128rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #59D5C7;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+}
+.sub-logo image {
+    width: 76rpx;
+    height: 32rpx;
+}

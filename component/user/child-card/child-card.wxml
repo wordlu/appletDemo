@@ -1,0 +1,21 @@
+<!--component/user/child-card/child-card.wxml-->
+<block wx:if='{{noValue}}'>
+    <view class='no-value'>
+        <view>你还未添加孩子</view>
+        <view>添加后可以在参加服务时快速选择</view>
+    </view>
+</block>
+<block wx:else>
+    <view class='child-card' wx:for='{{child}}'  bindtap='addChild' data-childid='{{item.id}}'>
+        <view class='base-info'>
+            <view class='name'>{{item.name}}</view>
+                <view class='age'>
+                    <text>{{item.age}}岁</text>
+                    <text>{{item.sex}}生</text>
+                </view>
+        </view>
+        <view class='enter'>
+            <image src='{{icon}}'></image>
+        </view>
+    </view>
+</block>

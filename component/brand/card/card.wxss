@@ -1,0 +1,78 @@
+/* component/common/brand-card/brand-card.wxss */
+.brand-card {
+    /* width: 670rpx; */
+    margin-bottom: 64rpx;
+    min-height: 414rpx;
+    border-radius: 20rpx;
+    background-image: url('https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/img_brandcard-bg%402x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 20rpx 24rpx 0 rgba(39,51,86,0.22);
+}
+.bg {
+    width: 670rpx;
+    min-height: 414rpx;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20rpx;
+}
+.card-content {
+    padding: 32rpx;
+    min-height: 414rpx;
+}
+.card-content .tag {
+    padding: 0 8rpx;
+    opacity: 0.8;
+    background: #80AEFF;
+    border-radius: 4rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #FFFFFF;
+}
+.card-content .content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-area {
+    margin-bottom: 16rpx;
+    width: 140rpx;
+    height: 140rpx;
+}
+.logo {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+}
+.slogan-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slogan-area .title {
+    font-family: PingFangSC-Medium;
+    font-weight: bold;
+    font-size: 28rpx;
+    color: #FFFFFF;
+}
+.status {
+    margin-bottom: 60rpx;
+    max-width: 488rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #FFFFFF;
+    text-align: center;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+}
+.tags text {
+    padding: 4rpx 24rpx;
+    margin: 8rpx;
+    font-family: PingFangSC-Medium;
+    font-weight: bold;
+    font-size: 22rpx;
+    color: #FFFFFF;
+    border-radius: 9.5px;
+    background: rgba(255,255,255,0.55);
+}

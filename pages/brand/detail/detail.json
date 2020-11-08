@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/component/common/navigation-bar/navigation-bar",
+    "brand-detail-new": "/component/brand/detail2/detail2",
+    "navbar": "/component/common/nav-bar/nav-bar",
+    "brand-top-new": "/component/brand/top2/top2"
+  },
+  "navigationBarTextStyle": "black"
+}

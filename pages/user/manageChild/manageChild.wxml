@@ -1,0 +1,13 @@
+<!--pages/user/manageChild/manageChild.wxml-->
+<!-- <navigation-bar title='{{bar}}' class="navigationBar {{android?'android':'nav'}} {{iosX?'iosx':''}}" bindtap='goback'></navigation-bar> -->
+<view class='content-page' style='height:{{pageContantHeight}}rpx;padding-top:{{customNavBarHeight}}rpx'>
+    <!-- <view class="{{android?'top_blank_android':'top_blank_nav'}} {{iosX?'top_blank_iosx':''}}"></view> -->
+    <navbar noback='false' title='{{bar}}' height='{{customNavBarHeight}}'></navbar>
+
+    <view class='child-list'>
+        <child-card kids='{{kids}}'></child-card>
+    </view>
+    <view class='add-child'>
+        <button bindtap='addChild'>+ 新增孩子</button>
+    </view>
+</view>

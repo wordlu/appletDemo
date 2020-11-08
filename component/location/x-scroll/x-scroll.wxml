@@ -1,0 +1,12 @@
+<!--component/activities/acti-banner/acti-banner.wxml-->
+<view class='content-page'>
+  <scroll-view class="scroll-x" scroll-x style="width: 100%">
+    <view class='content'>
+      <!-- <view class='list' wx:for="{{tagimgs}}" bindtap='showActiDetail'> -->
+      <view class='list' wx:for="{{tagimgs}}">
+        <view class='list-detail' style="background-image: url('{{item.dealImg}}')" ></view>
+        <text class='title'>{{item.tag}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

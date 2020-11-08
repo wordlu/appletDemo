@@ -1,0 +1,85 @@
+/* pages/booking/appointment/datepicker/datepicker.wxss */
+page {
+    height: 100%;
+}
+.content-page {
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0.60) 100%);
+}
+
+.reservable {
+    padding-top: 40rpx;
+    height: 400rpx;
+    background-color: #80AEFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.reservable .title {
+    margin-bottom: 32rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.reservable .time {
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.date-picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.date-picker .picker-view {
+    color: #80AEFF;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    font-weight: bold;
+}
+.picker-view picker-view-column {
+    text-align: center;
+}
+.selected-picker {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #80AEFF;
+    font-weight: bold;
+}
+.btn-area {
+    width: 100%;
+}
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 590rpx;
+    height: 96rpx;
+    background: #80AEFF;
+    border-radius: 46rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    /* bottom: 80rpx; */
+}
+.submit-reject {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 590rpx;
+    height: 96rpx;
+    background: rgb(187, 197, 216);
+    border-radius: 46rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.submit::after {
+  border: 0;
+}

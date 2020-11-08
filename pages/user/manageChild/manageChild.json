@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/component/common/navigation-bar/navigation-bar",
+    "child-card": "/component/user/child-card/child-card",
+    "navbar": "/component/common/nav-bar/nav-bar"
+  },
+  "navigationBarTextStyle": "black"
+}

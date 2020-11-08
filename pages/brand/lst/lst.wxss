@@ -1,0 +1,22 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.title-area {
+    margin-bottom: 64rpx;
+    display: flex;
+    flex-direction: column;
+}
+.title-area .title {
+    margin-bottom: 8rpx;
+    font-family: PingFangSC-Medium;
+    font-weight: bold;
+    font-size: 32rpx;
+    color: #262626;
+}
+.title-area .subtitle {
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #8C8C8C;
+}

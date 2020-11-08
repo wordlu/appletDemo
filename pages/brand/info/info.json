@@ -1,0 +1,16 @@
+{
+  "usingComponents": {
+    "brand-banner": "/component/brand/banner/banner",
+    "activity-banner": "/component/reservableitems/actvs/banner/banner",
+    "class-banner": "/component/reservableitems/exps/banner/banner",        
+    "location-banner": "/component/location/banner/banner",
+    "brand-logo": "/component/brand/logo/logo",
+    "brand-top": "/component/brand/top/top",
+    "brand-top-new": "/component/brand/top2/top2",
+    "navigation-bar": "/component/common/navigation-bar/navigation-bar",
+    "navbar": "/component/common/nav-bar/nav-bar"
+   },
+   "enablePullDownRefresh": true,
+   "backgroundTextStyle": "dark",
+   "navigationBarTextStyle":"black"
+}

@@ -1,0 +1,40 @@
+<!--component/brand/top2/top2.wxml-->
+<view class='content-page' data-brandid="{{item.id}}">
+  <view class='top-content' bindtap='brandDetails'>
+    <image class='brand-logo' src='{{brand.newLogo}}'></image>
+    <view class='top-content-right'>
+      <view class='top-content-right-title'>
+        <view class='brand-title'>{{brand.title}}</view>
+        <image class='img' src="{{img}}"></image>
+      </view>
+      <view class='brand-slogan'>{{brand.slogan}}</view>
+    </view>
+    
+  </view>
+  <!-- <view class='view-code'>
+    <view class='title'  bindtap="brandDetails">
+      <text>{{brand.title}}</text>
+      <image class='img' src="{{img}}"></image>
+    </view>
+    <image src='{{scan}}'  class='code' bindtap='scanclick'></image>
+  </view>
+  <view class='content'  bindtap="brandDetails">
+    <view class='info'>
+      <text class='intro'>「{{brand.slogan}}」</text>
+      <view class='lists'>
+        <view class='list' wx:for="{{brand['brand-tags']}}" wx:for-index="idx">
+          <view>
+            {{item}}
+            <block wx:if="{{idx<2}}">
+              <text class="separate"> | </text>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='logo-area'>
+      <image class='logo' src='{{brand.newLogo}}'></image>
+    </view>
+  </view> -->
+  
+</view>

@@ -1,0 +1,42 @@
+<!--component/auth/wechatlogin.wxml-->
+<!-- <text>component/auth/wechatlogin.wxml</text> -->
+<view class="drawer_screen" bindtap="" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+  <view class='login-content'>
+    <text class='slogan'>让家一般的温暖时刻伴随
+是咚哒精选儿童教育服务的理念</text>
+
+    <block wx:if='{{isChecking}}'>
+        <button  class="btn_ok"  wx:if='{{canIUse}}' open-type="getUserInfo" disabled bindgetuserinfo="bindGetUserInfo">授权发现更多精彩</button>
+        <view wx:else>请升级微信版本</view>
+    </block>
+
+    <block wx:else>
+        <button  class="btn_ok"  wx:if='{{canIUse}}' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权发现更多精彩</button>
+        <view wx:else>请升级微信版本</view>
+    </block>
+
+    <view class='sub-logo'>
+        <image src='{{subLogo}}'></image>
+    </view>
+  </view>
+</view>
+
+
+<!-- <view class="drawer_screen" bindtap="" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+  <view class='bg-img'>
+    <image src='{{bgImg}}' ></image>
+  </view>
+  <block wx:if='{{dongda}}'>
+  <view class="btn_ok" bindtap="direct2BrandInfo" data-statu="close">授权发现更多精彩</view>
+  </block>
+
+  <block wx:else>
+  <button class='btn_ok' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">授权发现更多精彩</button>
+  </block>
+
+  <view class='small-img'>
+    <image src='{{smImg}}'></image>
+  </view>
+</view> -->

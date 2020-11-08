@@ -1,0 +1,34 @@
+/* pages/locations/facilities/facilities.wxss */
+.content-page {
+  padding: 40rpx;
+}
+.title {
+  font-size: 32rpx;
+  color: #262626;
+  font-family: PingFangSC-Medium;
+}
+.facilities-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; /*弹性布局，一行排不下会自己换行*/
+}
+.item-view {
+  width:96rpx;
+  margin-top: 48rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 48rpx;
+}
+.image {
+  height: 48rpx;
+  width: 48rpx;
+  
+  margin-bottom: 16rpx;
+}
+.name {
+  color: #B2B2B2;
+  font-size: 22rpx;
+  text-align: center;
+}

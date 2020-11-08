@@ -1,0 +1,2 @@
+<navbar noback='true'  title='{{bar}}' height='{{customNavBarHeight}}'></navbar>
+<wechatlogin></wechatlogin>

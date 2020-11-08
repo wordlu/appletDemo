@@ -1,0 +1,176 @@
+<!--component/brand/detail2/detail2.wxml-->
+<view class='content-page'>
+  <view class='head'>
+    <view class='head-content'>
+      <image class='logo' src="{{brand.newLogo}}"></image>
+      <view class='title'>{{brand.title}}</view>
+      <view class='category'>{{brand.category.title}}</view>
+      <view class='slogan'>「 {{brand.slogan}} 」</view>
+    </view>
+    <!-- <image class='logo' src='{{brand.newLogo}}'></image>
+    <text class='headline'>{{brand.title}}</text>
+    <view class='des'>「 {{brand.slogan}} 」</view>
+    <view class='lists'>
+      <view class='list tags-area' wx:for="{{brand.brand_tags}}" wx:for-index="idx">
+        <text>{{item}}</text>
+        <block wx:if="{{idx < 2}}">
+          <text class='separate'> | </text> 
+        </block>  
+      </view>
+    </view> -->
+  </view>
+  <view class='content-detail'>
+    <view class='content-detail-basic-info'>
+      <view class='item-info'>
+        <image class='icon-info' src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/location%20copy%402x.png'></image>
+        <view class='address-text'>
+          <view class='address-title-text'>{{yard.title}}</view>
+          <view class='address-address-text'>{{yard.address}}</view>
+        </view>
+        <image class='icon-arrow' src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/chevron-right%20s%402x.png'></image>
+      </view>
+      <view class='line'></view>
+      <view class='item-info'>
+        <image class='icon-info' src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/phone%402x.png'></image>
+        <view class='phone-text'>{{yard['service-contact']}}</view>
+        <image class='icon-arrow' src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/chevron-right%20s%402x.png'></image>
+      </view>
+      <view class='line'></view>
+      <view class='item-info'>
+        <image class='icon-info' src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/openhour%402x.png'></image>
+        <view class='opentime-text'>{{yard['open-time']}}</view>
+      </view>
+    </view>
+    <view class='content-detail-item-info'>
+      <view class='item-detail'>
+        <view class='detail-item-title'>品牌亮点</view>
+        <view class='brand-tags-list'>
+          <block wx:for='{{brand["brand-tags"]}}' wx:for-index="idx">
+            <view class='tag-item' wx:if='{{idx == 0}}'>
+              {{item}}
+            </view>
+            <view class='tag-item notfirst' wx:else>
+              {{item}}
+            </view>
+          </block>
+        </view>
+      </view>
+      <view class='line down'></view>
+      <view class='item-detail'>
+        <view class='detail-item-title'>品牌故事</view>
+        <view class="brand-story-content {{isShowMore?'unellipsis':'ellipsis'}}">
+          {{brand["found-story"]}}
+          <!-- <text class='brand-story-text'>{{brand["found-story"]}}</text> -->
+        </view>
+        <view class='more' bindtap='showMore'>更多</view>
+      </view>
+      <view class='line down'></view>
+      <view class='item-detail'>
+        <view class='detail-item-title'>师资阵容</view>
+        <scroll-view class="scroll-x" scroll-x style="width: 100%">
+          <view class='teacher-list'>
+            <block wx:for='{{teachers}}' wx:for-index="idx">
+              <block wx:if='{{idx == 0}}'>
+                <view class='teacher-item'>
+                  <image class='teahcer-icon-img' src='{{item.dealImg}}'></image>
+                  <view class='teacher-name'>{{item.name}}</view>
+                  <view class='teacher-major'>{{item.major}}</view>
+                  <view class='teacher-teachyears'>{{item["teach-years"]}}</view>
+                </view>
+              </block>
+              <block wx:else>
+                <view class='teacher-item notfirst'>
+                  <image class='teahcer-icon-img' src='{{item.dealImg}}'></image>
+                  <view class='teacher-name'>{{item.name}}</view>
+                  <view class='teacher-major'>{{item.major}}</view>
+                  <view class='teacher-teachyears'>{{item["teach-years"]}}</view>
+                </view>
+              </block>
+            </block>
+          </view>
+        </scroll-view>
+      </view>
+      <view class='line down'></view>
+      <view class='item-detail'>
+        <view class='detail-item-title'>品牌荣誉</view>
+        <scroll-view class="" scroll-x style="width: 100%">
+          <view class='honor-list'>
+            <block wx:for="{{brand.Honors}}" wx:for-index="idx">
+              <block wx:if="{{idx == 0}}">
+                <view class='honor-item'>
+                  <image class='honor-img' src="{{item.dealImg}}"></image>
+                  <text class='honor-name'>{{item.tag}}</text>
+                </view>
+              </block>
+              <block wx:else>
+                <view class='honor-item'>
+                  <image class='honor-img' src="{{item.dealImg}}"></image>
+                  <text class='honor-name'>{{item.tag}}</text>
+                </view>
+              </block>
+            </block>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='time'>
+    <text class='title'>成立时间</text>
+    <text class='content'>{{brand.time}}</text>
+  </view>
+  <view class='story'>
+    <text class='title'>初心故事</text>
+    <text class='content'>{{brand["found-story"]}}</text>
+  </view>
+  <view class='team'>
+    <text class='title'>师资阵容</text>
+    <text class='content'>{{brand["edu-idea"]}}</text>
+  </view> -->
+  <!-- <view class='achievement'>
+    <text class='title'>教学成就</text>
+    <scroll-view class="" scroll-x style="width: 100%">
+    <view class='content'>
+      <view class='list' wx:for="{{brand.Honors}}">
+        <image src="{{item.dealImg}}"></image>
+        <text class='name'>{{item.tag}}</text>
+      </view>
+    </view>
+    </scroll-view>
+  </view> -->
+
+  <!-- <view class='attest'>
+    <text class='title'>资质认证</text>
+    <scroll-view class="" scroll-x style="width: 100%">
+    <view class='content'>
+      <view class='list' wx:for="{{brand.Certifications}}">
+        <image src='{{item.dealImg}}'></image>
+        <text class='name'>{{item.tag}}</text>
+      </view>
+    </view>
+    </scroll-view>
+  </view> -->
+
+  <!-- <view class='attest'>
+    <text class='title'>教学成就</text>
+    <scroll-view class="" scroll-x style="width: 100%">
+    <view class='content'>
+      <view class='list' wx:for="{{brand.Honors}}">
+        <image src='{{item.dealImg}}'></image>
+        <text class='name'>{{item.tag}}</text>
+      </view>
+    </view>
+    </scroll-view>
+  </view> -->
+  
+  <!-- <view class='achievement'>
+    <text class='title'>教学成就</text>
+    <view class='achieve'>
+      <view class='achieve-list'  wx:for="{{brand.Honors}}">
+        <view class='img-area'>
+          <image class='achieve-img' src='{{item.dealImg}}'></image>
+        </view>
+        <text class='achieve-content'>{{item.tag}}</text>
+      </view>
+    </view>
+  </view> -->
+</view> 

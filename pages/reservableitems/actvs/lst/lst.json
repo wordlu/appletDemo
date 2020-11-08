@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/component/common/navigation-bar/navigation-bar",
+    "acti-lst": "/component/reservableitems/actvs/banner/banner"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

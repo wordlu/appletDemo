@@ -1,0 +1,29 @@
+/* component/common/navigation-bar/navigation-bar.wxss */
+.bar {
+    padding-left: 18rpx;
+    padding-right: 18rpx;
+    padding-top: 60rpx;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.back-icon {
+    width: 44rpx;
+    height: 44rpx;
+    position: absolute;
+    left: 0;
+    padding-left: 28rpx;
+}
+.back-icon image {
+    width: 44rpx;
+    height: 44rpx;
+    padding-right: 44rpx;
+}
+.title {
+    width: 100%;
+    font-family: PingFangSC-Regular;
+    font-size: 17px;
+    color: #0D0D0D;
+    text-align: center;
+}

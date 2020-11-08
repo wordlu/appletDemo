@@ -1,0 +1,17 @@
+/* component/common/brand-logo/brand-logo.wxss */
+.brand-logo  {
+  height: 300rpx;
+  padding-bottom: 36rpx;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: left bottom;
+  background-size: cover;
+}
+.brand-logo image {
+  min-width: 400rpx;
+  width: auto;
+  height: 160rpx;
+}

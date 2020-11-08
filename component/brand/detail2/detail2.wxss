@@ -1,0 +1,231 @@
+/* component/brand/detail2/detail2.wxss */
+.content-page {
+  position:relative;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  padding-bottom: 80rpx;
+}
+.head {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 238rpx;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/img_home_brand_bg.png");
+  background-size: 100% 100%;
+  padding-bottom: 128rpx;
+}
+.head-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 186rpx;
+  height: 186rpx;
+  border-radius: 50%;
+}
+.title {
+  font-size: 44rpx;
+  color: #fff;
+  margin-top: 32rpx;
+}
+.category {
+  font-size: 22rpx;
+  height: 32rpx;
+  margin-top: 32rpx;
+  width: 60rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #80AEFF;
+  border-radius: 4rpx;
+  opacity: 0.8;
+}
+.slogan {
+  margin-top: 32rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-overflow: ellipsis;
+}
+.content-detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  top: -20rpx;
+  background-color: #fff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 48rpx;
+}
+.content-detail-basic-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start
+}
+.item-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-arrow {
+  width: 44rpx;
+  height: 44rpx;
+  margin-left: 20rpx;
+}
+.icon-info {
+  width: 44rpx;
+  height: 44rpx;
+}
+.address-text {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 32rpx;
+}
+.address-title-text {
+  font-size: 28rpx;
+  color: #262626;
+}
+.address-address-text {
+  font-size: 26rpx;
+  color: #8C8C8C;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.line {
+  height: 1rpx;
+  background-color: #F2F2F2;
+  margin-top: 32rpx;
+  margin-bottom: 32rpx;
+}
+.down {
+  margin-top: 48rpx;
+  margin-bottom: 48rpx;
+}
+.phone-text {
+  font-size: 28rpx;
+  color: #595959;
+  width: 75%;
+  margin-left: 32rpx;
+}
+.opentime-text {
+  margin-left: 32rpx;
+  font-size: 28rpx;
+  width: 75%;
+  color: #595959;
+}
+.content-detail-item-info {
+  margin-top: 110rpx;
+}
+.brand-highlight {
+  display: flex;
+  flex-direction: column;
+}
+.detail-item-title {
+  font-size: 28rpx;
+  color: #262626;
+  font-weight: bolder;
+  margin-bottom: 48rpx;
+}
+.tag-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 52rpx;
+  width: 168rpx;
+  color: #6C7DA5;
+  font-size: 26rpx;
+  border-radius: 8rpx;
+  background: linear-gradient(to right,rgba(244,247,255,1),rgba(232,237,255,1));
+}
+.notfirst {
+  margin-left: 16rpx;
+}
+.brand-tags-list {
+  display: flex;
+  flex-direction: row;
+}
+.teacher-list {
+  display: flex;
+  flex-direction: row;
+}
+.brand-story-content {
+  color: #595959;
+  font-size: 28rpx;
+  
+}
+.ellipsis {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;  /*文本显示行数*/
+  -webkit-box-orient: vertical;
+}
+.unellipsis {
+  
+}
+.more {
+  color: #80AEFF;
+  font-size: 28rpx;
+}
+.teacher-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teahcer-icon-img{
+  height: 208rpx;
+  width: 208rpx;
+  border-radius: 50%;
+}
+.teacher-name {
+  font-size: 28rpx;
+  color:  #262626;
+  margin-top: 16rpx;
+  font-weight: bolder;
+}
+.teacher-major {
+  margin-top: 24rpx;
+  font-size: 22rpx;
+  color: #B2B2B2;
+  font-weight: bolder;
+}
+.teacher-teachyears {
+  font-size: 22rpx;
+  color: #B2B2B2;
+  font-weight: bolder;
+}
+.honor-list {
+  display: flex;
+  flex-direction: row;
+}
+.honor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.honor-img {
+  width: 184rpx;
+  height: 122rpx;
+}
+.honor-name {
+  width: 184rpx;
+  margin-top: 20rpx;
+  color: #B2B2B2;
+  font-size: 22rpx;
+  text-align: center;
+}

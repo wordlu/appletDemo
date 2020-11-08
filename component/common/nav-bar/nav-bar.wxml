@@ -1,0 +1,7 @@
+<!--component/common/nav-bar/nav-bar.wxml-->
+<view class="navigationBar bar " style="background-color:{{bgColor}};color:{{color}};height:{{height}}rpx">
+  <view class='title-container'>
+    <image wx:if="{{noback == 'false'}}" class='back-icon' bindtap='backTo' src='{{backIcon}}'></image>
+    <view class='title' style="color:{{color}}">{{title}}</view>
+  </view>
+</view>

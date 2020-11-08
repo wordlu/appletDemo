@@ -1,0 +1,36 @@
+<!--component/classes/cla-banner/cla-banner.wxml-->
+<view class='content-page'>
+  <block wx:if="{{isList == 'false'}}">
+    <view class='title'>
+      <text>超值体验课</text>
+      <!-- <image src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/icon_chevron_right_dark%402x.png'></image> -->
+    </view>
+  </block>
+    <view class='content'>
+      <block wx:for="{{exp}}" >
+        <view class='list' bindtap='showClsDetail' data-expid="{{item.id}}">
+          <view class='cover' style="background-image: url('{{item.sessioninfo.dealCover}}')"></view>
+          <view class='class-info'>
+            <view class='info'>
+              <text class='sort'>{{item.sessioninfo.category.title}}</text>
+              <text class='name'>{{item.sessioninfo.title}}</text>
+            </view>
+            <view class='suit'>
+              <block wx:if="{{item.sessioninfo.hasAge}}">
+                <text class='age'>{{item.sessioninfo.alb}}-{{item.sessioninfo.aub}} 岁</text>
+              </block>
+              <block wx:else>
+                <view class='age'>不限年龄</view>
+              </block>
+              
+              <!-- <view class='price'><text>￥{{item.price}}</text>/课时</view> -->
+            </view>
+          </view>
+        </view>
+      </block>
+      
+    </view>
+  <block wx:if="{{isList == 'false'}}">
+    <a class='showClasses' bindtap='showClasses'>更多精选体验课</a>
+  </block>
+</view>

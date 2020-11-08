@@ -1,0 +1,27 @@
+<!--pages/brand/brand.wxml-->
+<view class='content-page'>
+    <navbar noback='false' title='{{mername}}' bgColor='{{barBgColor}}' iconColor='{{iconColor}}' color='{{barColor}}' height='{{customNavBarHeight}}'></navbar>
+    <brand-top-new class='brand-top' brand="{{brandInfo}}"></brand-top-new>
+    <view class='scan-view' bindtap='scanclick'>
+      <image class='scan-img' src='{{scanImg}}'></image>
+    </view>
+    <view class='brand-apply-view'>
+      <view class='brand-apply-btn' bindtap='brandApply'>立即报名</view>
+    </view>
+
+    <view class="brand-container" wx:if="{{brand}}"> 
+    <!-- 精彩活动 -->
+      <view class="brand-component">
+        <activity-banner class="activity-banner" actvs="{{actvs}}"></activity-banner>
+      </view>
+      <!-- 超值体验课 -->
+      <view class="brand-component component-margin-top">
+        <class-banner isList="false"  exps="{{exps}}"  class="class-banner"></class-banner>
+      </view>
+      <!-- 参观校区 -->
+      <view class="brand-component component-margin-top" >
+        <location-banner class="location-banner" yard="{{yardInfo}}"></location-banner>
+      </view>
+    </view>
+</view>
+  

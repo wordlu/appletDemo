@@ -1,0 +1,107 @@
+/* component/brand-banner/brand-banner.wxss */
+.brand {
+	width: 100%;
+	height: 230rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: spece-between;
+	box-sizing: border-box;
+
+}
+
+.brand-container {
+	width: 100%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	padding: 0 20rpx;
+}
+
+.brand .contents {
+	/* width: 70%; */
+	height: 150rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+
+	/* background-color: red; */
+}
+
+.brand .title {
+	display: inline-block;
+	/* background-color: green; */
+	font-family: SFProText-Medium;
+	font-size: 48rpx;
+	color: #0D0D0D;
+
+	padding-top: 15rpx;
+}
+
+.brand .slogan {
+	display: flex;
+	width: max-content;
+	/* background-color: yellow; */
+}
+
+.brand .heightlights {
+	display: flex;
+	flex-flow: row || nowrap;
+	justify-content: flex-start;
+}
+
+.brand .hl-item {
+	/* background-color: orange; */
+	font-family: SFProText-Regular;
+	font-size: 26rpx;
+	color: #737373;
+}
+
+.brand .img-container {
+	/* background-color: black; */
+	/* width: 30%; */
+	/* height: 100rpx; */
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.brand .content-container {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-around;
+
+	margin-left: 40rpx;
+}
+
+.brand .img-container image {
+	/* background-color: blue; */
+	width: 148rpx;
+	height: 148rpx;
+	margin-left: 30rpx;
+}
+
+.brand .pointer-container {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-around;
+
+	/* background-color: blue;	 */
+	padding-right: 30rpx;
+}
+
+.brand .pointer-container image {
+	width: 16rpx;
+	height: 26rpx;
+}
+
+.brand .middot {
+	font-family: SFProText-Regular;
+	font-size: 26rpx;
+	color: #737373;
+}

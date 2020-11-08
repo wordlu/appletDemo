@@ -1,0 +1,12 @@
+{
+  "name": "dongda-npm-component",
+  "version": "1.0.0",
+  "description": "",
+  "miniprogram": "dist",
+  "devDependencies": {
+    "@types/qunit": "^2.5.0",
+    "lerna": "3.3.2",
+    "broccoli-cli": "^1.0.0"
+  },
+  "dependencies": {}
+}

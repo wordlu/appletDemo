@@ -1,0 +1,33 @@
+<!--component/reservableitems/description/description.wxml-->
+<view class="clsabout">
+	<view class="content-item about-margin">
+    <block wx:if="{{isCourse == 'false'}}">
+      <view class="content-row-span">
+        <text class="about-title">活动内容</text>
+      </view>
+    </block>
+    <block wx:else>
+		  <text class="about-title">体验课内容</text>
+    </block>
+
+		<block wx:if="{{!expending}}">
+			<view class="about-des">
+				<text>{{exp.sessioninfo.description}}</text>
+        <!-- <view class="about-des-more">
+					<text>更多</text>
+				</view> -->
+			</view>
+		</block>
+		<block wx:else>
+			<text class="about-des-all">{{des}}</text>
+		</block>
+    <!-- <block wx:if="{{isCourse == 'false'}}"> -->
+      <view class="content-row-span">
+        <text class="about-title">与孩子互动</text>
+      </view>
+      <view class="about-des">
+				<text>{{exp.sessioninfo["play-children"]}}</text>
+			</view>
+	</view>
+</view>
+

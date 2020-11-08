@@ -1,0 +1,11 @@
+<!--component/activities/acti-remarks/acti-remarks.wxml-->
+<view class='content about-margin' wx:if='{{hasRemark}}'>
+  <view class='title'>将为宝贝提供</view>
+  <view class='lists' wx:for='{{exp.sessioninfo.including}}'>
+    <view>
+       <text class='list-dot'>・</text>
+       <text class='list'>{{item}}</text>
+    </view>
+    
+  </view>
+</view>

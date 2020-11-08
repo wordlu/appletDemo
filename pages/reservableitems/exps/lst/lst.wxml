@@ -1,0 +1,12 @@
+<!--pages/class-lst/class-lst.wxml-->
+<!-- <navigation-bar title='{{bar}}' class="navigationBar {{android?'android':'nav'}} {{iosX?'iosx':''}}"></navigation-bar> -->
+<!-- <view class="{{android?'top_blank_android':'top_blank_nav'}} {{iosX?'top_blank_iosx':''}}"></view> -->
+<navbar noback='false' title='{{bar}}' height='{{customNavBarHeight}}'></navbar>
+<view class='content-page' style='margin-top:{{customNavBarHeight}}rpx'>
+  <view class="cls-lst">
+    <class-lst isList="true" exps="{{exps}}"></class-lst>
+  </view>
+  <view class='notice'>
+    <text>-更多精选即将上线-</text>
+  </view> 
+</view>

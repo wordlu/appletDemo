@@ -1,0 +1,80 @@
+<view class="clsdet-container">
+<navbar noback='false' iconColor='{{iconColor}}' bgColor='{{barBgColor}}' height='{{customNavBarHeight}}'></navbar>
+
+    <view class="clsdet-component">
+        <clsimg exp="{{exp}}"></clsimg>
+    </view>
+
+    <view class='clsdet-component'>
+        <cls-info exp="{{exp}}"></cls-info>
+    </view>
+
+    <view class='clsdet-component' wx:if='{{reward}}'>
+        <cls-reward exp="{{exp}}"></cls-reward>
+    </view>
+
+    <view class='clsdet-component'>
+        <view class="clsdet-component" wx:if='{{hide}}'>
+            <cls-about exp="{{exp}}"></cls-about>
+        </view>
+    </view>
+
+    <view class='clsdet-component' wx:if='{{remarks}}'>
+        <cls-showitems exp="{{exp}}"></cls-showitems>
+    </view>
+
+    <view class='clsdet-component'>
+        <view class='notices'>
+            <cls-notice exp="{{exp}}"></cls-notice>
+        </view>
+    </view>
+
+    <view class='clsdet-component' wx:if='{{images}}'>
+        <view class='scroll'>
+            <cls-scroll exp="{{showimages}}"></cls-scroll>
+        </view>
+    </view>
+
+    <view class='clsdet-component'>
+      <view class='faci-content'>
+        <!-- <view class='facility'>
+            <cls-facility exp="{{exp}}"></cls-facility>
+        </view> -->
+      <text class='subtitle'>校区设施</text>
+      <view class='faci-view'>
+        <block wx:for="{{facilities}}" wx:for-index="idx">
+          <block wx:if="{{idx < 4}}">
+            <view class='faci-item'>
+              <image class='faci-img' src='{{item.image}}'></image>
+              <view class='faci-name'>{{item.name}}</view>
+            </view>
+          </block>
+          <block wx:if="{{idx == 4}}">
+            <view class='faci-item'>
+              <view class='faci-more-text' bindtap='moreFacility'>+{{facilities.length - idx - 1}}</view>
+              <view class='faci-name'>更多</view>
+            </view>
+          </block>
+        </block>
+      </view>
+    </view>
+    </view>
+    
+
+</view>
+
+<cover-view class="clsdet-component btn" bindtap='apply'  wx:if='{{hide}}'>
+    <clsbtn isCourse="{{isCourse}}" exp="{{exp}}"></clsbtn>
+</cover-view>
+
+<view class='apply' wx:if="{{show}}" animation='{{animationData}}' catchtouchmove="true">
+    <view class='write'>
+      <view class='block'wx:if="{{showOthers}}">
+        <view class='title'  bindtap='hideModal'>联系方式</view>
+        <view class='num'>
+            <input  type="number" placeholder-style="font-family: PingFangSC-Regular;font-size: 28rpx;color: #D9D9D9;" placeholder="请输入" focus="{{focus}}" />
+        </view>
+      </view>
+      <view class='submit' bindtap='showSuccess' wx:if="{{showOthers}}">立即报名</view>
+    </view>
+</view>

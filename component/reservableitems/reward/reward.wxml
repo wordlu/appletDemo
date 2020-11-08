@@ -1,0 +1,18 @@
+<!--component/classes/cla-reward/cla-reward.wxml-->
+<view class='content-page' wx:if='{{ifreward}}'>
+  <view class='reward'>
+    <image src='{{img}}'  class='reward-img'></image>
+    <view class='reward-content'>
+      <text class='title'>{{title}}</text>
+      <view class='reward-list'>
+        <view class='list-content' wx:for='{{exp.sessioninfo.acquisition}}'>
+          <view>
+            <text class='list-dot'>・</text>
+            <text>{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+ 
+</view>

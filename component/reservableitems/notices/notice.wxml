@@ -1,0 +1,35 @@
+<!--component/classes/cla-notices/cla-notice.wxml-->
+<view class='content-page'>
+  <view class='bring' wx:if='{{bring}}'>
+    <view class='title-area'>
+      <image class='title-img' src='{{bringImg}}'></image>
+      <text class='title-text'>{{bringTitle}}</text>
+    </view>
+    <view class='lists'>
+      <view class='list' wx:for='{{exp.sessioninfo.carrying}}'>
+        <view>
+          <text class='list-dot'>・</text>
+          <text>{{item}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='notice'>
+    <view class='title-area'>
+      <image class='title-img' src='{{noticeImg}}'></image>
+      <text class='title-text'>{{noticeTitle}}</text>
+    </view>
+    <view class='lists'>
+      <view class='list'>
+        <view>
+          <text class='list-dot'>・</text>
+          <text class='name'>{{acc}}</text>
+        </view>
+        <view>
+          <text class='list-dot' wx:if='{{otherNotice}}'>・</text>
+          <text class='name'>{{exp.sessioninfo.notice}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

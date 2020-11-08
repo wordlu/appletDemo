@@ -1,0 +1,14 @@
+<!-- <navigation-bar noback='true' title='{{bar}}' class="navigationBar {{android?'android':'nav'}} {{iosX?'iosx':''}}"></navigation-bar> -->
+<view class='content' style='margin-top:{{customNavBarHeight}}rpx'>
+    <!-- <view class="{{android?'top_blank_android':'top_blank_nav'}} {{iosX?'top_blank_iosx':''}}"></view> -->
+    <navbar noback='true' title='{{bar}}' bgColor='#fff' height='{{customNavBarHeight}}'></navbar>
+
+    <view class='title-area'>
+        <text class='title'>咚哒，甄选素质教育服务</text>
+        <text class='subtitle'>与您一起发现孩子发展的无限可能</text>
+    </view>
+    <view class='brand-card'>
+        <brand-card list="{{brandList}}"></brand-card>
+    </view>
+</view>
+    

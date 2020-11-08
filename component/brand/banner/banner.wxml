@@ -1,0 +1,25 @@
+<!--component/brand-banner/brand-banner.wxml-->
+<view class="brand" bindtap="showSlogan">
+	<view class="brand-container">
+    <view class="img-container">
+      <image src="https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/brand_logo.png" ></image>
+    </view>
+    <view class="content-container">
+      <view class="contents">
+        <text class="title">{{name}}</text>
+        <!-- <text class="slogan">{{slogan}}</text> -->
+        <view class="heightlights">
+          <view class="" wx:for="{{hls}}" wx:for-index="idx" wx:for-item="item" >
+						<text class="hl-item">{{item.content}}</text>
+						 <block wx:if="{{idx != hls.length - 1}}">
+              <text class="middot">・</text>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+	</view>
+  <view class="pointer-container">
+  	<image src="https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/icon_enter%402x.png" ></image>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+/* pages/user/myService/myService.wxss */
+page {
+    height: 100%;
+}
+.content-page {
+    height: 100%;
+    background-color: #f7f8fb;
+}
+.card-list {
+    padding: 40rpx;
+    background-color: #f7f8fb;
+}

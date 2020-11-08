@@ -1,0 +1,24 @@
+<!--component/common/brand-card/brand-card.wxml-->
+<view wx:for='{{list}}' data-brandid="{{item.id}}" bindtap="showBrandDetail">
+    <view class='brand-card'>
+        <view class='bg'>
+            <view class='card-content'>
+                <text class='tag'>{{item.category.title}}</text>
+                <view class='content-center'>
+                    <view class='logo-area'>
+                        <image class='logo' src='{{item.dealLogo}}'></image>
+                    </view>
+                    <view class='slogan-area'>
+                        <text class='title'>{{item.title}}</text>
+                        <text class='status'>「 {{item.slogan}} 」</text>
+                    </view>
+                    <view class='tags'>
+                        <text  wx:for='{{item["brand-tags"]}}'>{{item}}</text>
+                    </view>
+                </view>
+                
+            </view>
+            
+        </view>
+    </view>
+</view>

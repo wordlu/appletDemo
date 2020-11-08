@@ -1,0 +1,41 @@
+<!--component/class-banner/img-containger/img-container.wxml-->
+<view class="clsdet-img">
+  <!-- <scroll-view class="content-item" scroll-x style="width: 100%">
+    <view class="content-row" >
+			<view class="clsdet-detail">
+				<view class="clsdet-detail-img" style="background-image: url('{{exp.SessionInfo.dealCover}}')" >
+				</view>
+      </view>
+    </view>
+  </scroll-view> -->
+  <swiper 
+      autoplay="{{autoplay}}" 
+      indicator-dots="{{indicatorDots}}"
+      indicator-active-color="{{pointerColor}}"
+      circular="{{circular}}" 
+      interval="{{interval}}"
+      duration="{{duration}}"
+      bindchange='changeIndex'>
+    <swiper-item>
+      <image src="{{exp.sessioninfo.dealCover}}" class="slide-image"/>
+    </swiper-item>
+    <block wx:for="{{exp.sessioninfo.images}}">
+      <block wx:if="{{item.dealImg}}" >
+        <swiper-item>
+          <image src="{{item.dealImg}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </block>
+  </swiper>
+  <view class='exp-info-title text-m' wx:if='{{exp.sessioninfo.title.length > 12}}'>
+    <view class='type'>{{exp.sessioninfo.category.title}}</view>
+    <view class='title '>{{exp.sessioninfo.title}}</view>
+  </view>
+  <view class='exp-info-title text-l' wx:else>
+    <view class='type'>{{exp.sessioninfo.category.title}}</view>
+    <view class='title'>{{exp.sessioninfo.title}}</view>
+  </view>
+  <view class='indicator-view'>
+    <view class='indicator-text'>{{curIndex+1}}/{{exp.sessioninfo.images.length+1}}</view>
+  </view>
+</view>

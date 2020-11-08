@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/component/common/navigation-bar/navigation-bar",
+    "class-lst": "/component/reservableitems/exps/banner/banner",
+    "navbar": "/component/common/nav-bar/nav-bar"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTextStyle": "black"
+}

@@ -1,0 +1,14 @@
+<!--pages/locations/facilities/facilities.wxml-->
+<view class='content-page' style='margin-top:{{customNavBarHeight}}rpx'>
+    <navbar noback='false' height='{{customNavBarHeight}}'></navbar>
+  <view class="{{android?'top_blank_android':'top_blank_nav'}} {{iosX?'top_blank_iosx':''}}"></view>
+  <view class='title'>校区设施</view>
+  <view class='facilities-list'>
+    <block wx:for="{{facilities}}" wx:for-index="idx" wx:key="idx">
+      <view class='item-view'>
+        <image wx:if="{{item.image}}" class="image" src='{{item.image}}'></image>
+        <view class='name'>{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+</view>

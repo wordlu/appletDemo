@@ -1,0 +1,62 @@
+<!--pages/locations/details/details.wxml-->
+<!-- <navigation-bar title='{{bar}}' class="navigationBar {{android?'android':'nav'}} {{iosX?'iosx':''}}"></navigation-bar> -->
+<view class='content-page' yard='{{yard}}' style='margin-top:{{customNavBarHeight}}rpx'>
+    <navbar noback='false' title='{{bar}}' height='{{customNavBarHeight}}'></navbar>
+  <view class="{{android?'top_blank_android':'top_blank_nav'}} {{iosX?'top_blank_iosx':''}}"></view>
+  <view class='title-area'>
+    <view class='title'>{{yard.title}}</view>
+    <view class='address'>{{yard.address}}</view>
+    <view class='tags'>
+      <text>{{yard.scenario}}</text><text>{{yard.attribute}}</text>
+    </view>
+  </view>
+  <view class='show-img-area'>
+    <x-scroll-banner tagimgs="{{yardimages}}"></x-scroll-banner>
+  </view>
+  <view class='content'>
+    <text class='subtitle'>交通路线</text>
+    <text class='address'>{{yard["traffic-info"]}}</text>
+  </view>
+  <view class='content'>
+    <text class='subtitle'>校区认证</text>
+    <scroll-view class="" scroll-x style="width: 100%">
+      <view class='certi-list'>
+          <block wx:for="{{certImgs}}" wx:for-index="idx">
+            <block wx:if="{{idx == 0}}">
+              <view class='cert-item'>
+                <image class='cert-img' src="{{item.dealImg}}"></image>
+                <text class='cert-name'>{{item.tag}}</text>
+              </view>
+            </block>
+             <block wx:else>
+               <view class='cert-item'>
+                <image class='cert-img' src="{{item.dealImg}}"></image>
+                <text class='cert-name'>{{item.tag}}</text>
+                </view>
+              </block>
+            </block>
+          </view>
+    </scroll-view>
+    
+  </view>
+  <view class='content'>
+    <!-- <facility facility="{{facilities}}"></facility> -->
+    <text class='subtitle'>校区设施</text>
+    <view class='faci-view'>
+      <block wx:for="{{facilities}}" wx:for-index="idx">
+        <block wx:if="{{idx < 4}}">
+          <view class='faci-item'>
+            <image class='faci-img' src='{{item.image}}'></image>
+            <view class='faci-name'>{{item.name}}</view>
+          </view>
+        </block>
+        <block wx:if="{{idx == 4}}">
+          <view class='faci-item'>
+            <view class='faci-more-text' bindtap='moreFacility'>+{{facilities.length - idx - 1}}</view>
+            <view class='faci-name'>更多</view>
+          </view>
+        </block>
+      </block>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+/* pages/user/manageChild/manageChild.wxss */
+page {
+    height: 100%;
+}
+.content-page {
+    background-color: #f7f8fb;
+}
+.child-list {
+    padding: 40rpx;
+}
+.add-child {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 30rpx;
+}
+.add-child button {
+    width: 600rpx;
+    height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #f2f6ff;
+    border-radius: 4px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #80AEFF;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid transparent;
+}

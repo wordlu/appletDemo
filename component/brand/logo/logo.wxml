@@ -1,0 +1,4 @@
+<!--component/common/brand-logo/brand-logo.wxml-->
+<view class='brand-logo' bindtap='showBrandDetail' style='background-image:url("{{brand.logobg}}")'>
+    <image src='{{brand.logourl}}'></image>
+</view>

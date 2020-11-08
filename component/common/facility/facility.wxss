@@ -1,0 +1,115 @@
+/* component/common/facility/facility.wxss */
+.content-page {
+  margin-top: 49rpx;
+  display: flex;
+  flex-direction: column;
+}
+.subtitle {
+  margin-bottom: 32rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #0D0D0D;
+}
+
+.facility-detail {
+  display: flex;
+  flex-direction: row;
+}
+.facility-detail .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 96rpx;
+  margin-right: 48rpx;
+}
+.facility-detail .facility-img {
+  margin-bottom: 16rpx;
+  width: 48rpx;
+  height: 48rpx;
+  background: #ddd;
+}
+.facility-detail text {
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #A6A6A6;
+}
+.content-item {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: flex-start;
+  align-items: center;
+  text-align:center;
+
+}
+.bg-color {
+  width: 96rpx;
+  height: 96rpx;
+  background: #f0f5fd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+}
+.content-align-center {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.content-item text {
+  width: 96rpx;
+  
+}
+.content-mid {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-around;
+} 
+.content-mid image {
+  width: 16rpx;
+  height: 26epx;
+}
+
+.content-row {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.c-loc-facility-item {
+	font-family: SFProText-Regular;
+	font-size: 22rpx;
+	color: #737373;
+  width: 96rpx;
+  height: 96rpx;
+}
+.c-loc-facility-item text {
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #A6A6A6;
+}
+.c-loc-facility-item image {
+	width: 48rpx;
+	height: 48rpx;
+
+	margin-bottom: 16rpx;
+}
+
+text.c-loc-facility-more-num {
+  font-family: SFProText-Bold;
+  font-size: 18px;
+  color: #80AEFF;
+	
+	margin-bottom: 22rpx;
+}
+
+.c-loc-facility-more {
+	font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #A6A6A6;
+}

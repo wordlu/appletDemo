@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/brand/info/info",
+    "pages/brand/lst/lst",
+    "pages/register/register",
+    "pages/user/info/info",
+    "pages/booking/appointment/datepicker/datepicker",
+    "pages/booking/appointment/order/order",
+    "pages/booking/appointment/addkid/addkid",
+    "pages/booking/appointment/result/result",
+    "pages/booking/appointment/brandresult/brandresult",
+    "pages/booking/appointment/brandorder/brandorder",
+    "pages/phonenumber/phonenumber",
+    "pages/locations/facilities/facilities"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#A6A6A6",
+    "selectedColor": "#80AEFF",
+    "list": [
+      {
+        "pagePath": "pages/brand/lst/lst",
+        "text": "发现",
+        "iconPath": "./utils/image/home.png",
+        "selectedIconPath": "./utils/image/homeselected.png"
+      },
+      {
+        "pagePath": "pages/user/info/info",
+        "text": "我",
+        "iconPath": "./utils/image/mine.png",
+        "selectedIconPath": "./utils/image/mineselected.png"
+      }
+    ]
+  },
+  "globalData": {
+    "navHeight": 0
+  },
+  "sitemapLocation": "sitemap94.json"
+}

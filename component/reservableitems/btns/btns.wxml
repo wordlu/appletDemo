@@ -1,0 +1,18 @@
+<!--component/activity-banner/acti-btns/acti-btns.wxml-->
+<cover-view class="actibtn">
+	<cover-view class="content-row-mid ">
+		<cover-view class="content-item-mid actibtn-bkg">
+      <cover-view class="content-row-span ">
+      <cover-image class='btn-bg' src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/btn_jion%402x.png'></cover-image>
+        <cover-view class="content-row">
+          <cover-view class="acti-price">{{exp.sessioninfo.price}}</cover-view>
+        </cover-view>
+        <cover-view class="content-row">
+          <cover-view class="acti-nav">立即预约</cover-view>
+          <!-- <cover-view class="acti-nav" wx:if='{{isCourse == "false"}}'>立即报名</cover-view> -->
+          <cover-image class="acti-nav-arrow" src="https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/icon_arrow_right_light%402x.png"></cover-image>
+        </cover-view>
+			</cover-view>
+    </cover-view>
+	</cover-view>
+</cover-view>

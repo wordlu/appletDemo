@@ -1,0 +1,27 @@
+<!--component/location-banner/location-banner.wxml-->
+<view class="loc-banner" bindtap='showLocations' data-brandid="{{item.id}}">
+	<view class="content-page">
+		<view class="content-item">
+			<view class="content-row-span">
+        <view class='big-title'>
+          <view class="title">参观校区</view>
+          <view class='btn'>
+            <text>更多详情</text>
+            <image src="https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/icon_chevron_right_dark%402x.png"></image>
+          </view>
+        </view>				
+			</view> 
+		</view>
+    <view class='bg-image' style='background-image: url("{{bgImg}}")'>
+      <text class='subtitle'>{{yard.title}}</text>
+      <text class='address'>{{yard.address}}</text>
+    </view>
+    <view class='show-image'>
+      <image src='{{yard.cover1}}' class='img-1'></image>
+      <view class='img-list'>
+        <image src='{{yard.cover2}}' class='img-2'></image>
+        <image src='{{yard.cover3}}' class='img-2'></image>
+      </view>
+    </view>
+	</view>
+</view>

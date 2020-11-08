@@ -1,0 +1,28 @@
+<!--pages/booking/appointment/datepicker/datepicker.wxml-->
+<!-- <navigation-bar title='{{bar}}' class="navi {{android?'android':'nav'}} {{iosX?'iosx':''}}"></navigation-bar> -->
+<view class='content-page' style='height:{{pageContantHeight}}rpx;padding-top:{{customNavBarHeight}}rpx'>
+  <navbar noback='false' title='{{bar}}' iconColor='1' bgColor='#80AEFF' color='#fff' height='{{customNavBarHeight}}'></navbar>
+  <view class='info'>
+    <view class='reservable'>
+      <view class='title'>您的意向时间</view>
+      <view class='time'>{{year}} 年 {{month}} 月 {{day}} 日</view>
+    </view>
+    <view class='date-picker'>
+      <picker-view class='picker-view' indicator-style="height: 50px;" indicator-class='selected-picker' style="width: 70%; height: 300px;" value="{{value}}" bindchange="bindChange" bindpickend="bindEnd" bindpickstart="bindStart">
+        <picker-view-column>
+          <view wx:for="{{years}}" style="line-height: 50px">{{item}}年</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{months}}" style="line-height: 50px">{{item}}月</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{days}}" style="line-height: 50px">{{item}}日</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </view>
+  <view class='btn-area'>
+    <button class='submit' bindtap='next' wx:if="{{clickAvailable}}">下一步</button>
+    <button class='submit-reject' wx:else>下一步</button>
+  </view>
+</view>

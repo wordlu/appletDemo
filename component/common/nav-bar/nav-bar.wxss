@@ -1,0 +1,79 @@
+/* component/common/nav-bar/nav-bar.wxss */
+
+.navigationBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  /* height: 88rpx; */
+}
+
+.title-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: PingFangSC-Regular;
+  font-size: 17px;
+  color: #0d0d0d;
+}
+
+/* .bar {
+  padding-top: 56rpx;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+*/
+
+.back-icon {
+  position: absolute;
+  padding: 0 40rpx;
+  left: 0;
+  bottom: 24rpx;
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.title-container .title {
+  position: absolute;
+  bottom: 24rpx;
+  left: 50%;
+  
+  transform: translateX(-50%);
+}
+
+.text-margin-left {
+  margin-left: -40px;
+}
+
+
+/* 
+.nav {
+  height: 44rpx;
+  padding-bottom: 24rpx;
+}
+*/
+.iosx {
+  padding-top: 110rpx;
+  padding-bottom: 24rpx;
+}
+
+.android {
+  height: 48rpx;
+  padding-top: 60rpx;
+  padding-bottom: 24rpx;
+} 
+
+.top_blank_nav {
+  padding-top: 130rpx;
+}
+
+.top_blank_android {
+  padding-top: 138rpx;
+}
+
+.top_blank_iosx {
+  padding-top: 178rpx;
+}

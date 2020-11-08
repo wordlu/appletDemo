@@ -1,0 +1,131 @@
+/* component/reservableitems/description/description.wxss */
+.clsabout .content-item {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.clsabout .content-row {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.clsabout .content-row-span {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.clsabout .about-margin {
+	/* margin-top: 98rpx; */
+	margin-left: 40rpx;
+	margin-right: 40rpx;
+  padding-top: 64rpx;
+  /* padding-bottom: 64rpx; */
+}
+
+.clsabout .about-title {
+	font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #0D0D0D;
+  
+	margin-bottom: 32rpx;
+}
+
+.clsabout .about-title-des {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #404040;
+}
+
+.clsabout .about-title-des image {
+  width: 24rpx;
+  height: 24rpx;
+
+  margin-top: 4rpx;
+  margin-right: 6rpx;
+}
+
+.clsabout .about-des {
+	/* max-height: 176rpx;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical; */
+
+	font-family: PingFangSC-Regular;
+	font-size: 28rpx;
+	line-height: 44rpx;
+  color: #737373;
+  letter-spacing: 2rpx;
+
+	position: relative;
+	margin-bottom: 64rpx;
+}
+
+.clsabout .about-des-more {
+	position: absolute;
+	bottom: 0;
+	right: 15rpx;
+
+	font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #80AEFF;
+}
+
+.clsabout .about-des-all {
+	font-family: PingFangSC-Regular;
+	font-size: 28rpx;
+	color: #404040;
+	letter-spacing: 3rpx;
+	line-height: 44rpx;
+	
+	position: relative;
+	margin-bottom: 22rpx;
+}
+
+.clsabout .about-bonus {
+	font-family: SFProText-Regular;
+	font-size: 28rpx;
+	color: #A6A6A6;
+	letter-spacing: 2rpx;
+
+	margin-top: 10rpx;
+}
+
+.clsabout .about-bonus image {
+	width: 28rpx;
+	height: 28rpx;
+
+	margin-right: 16rpx;
+	margin-top: 5rpx;
+}
+.explan {
+  height: 72rpx;
+  background: #FFFAF8;
+  border-radius: 8rpx;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.explan image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+  margin-left: 32rpx;
+}
+.explan text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #737373;
+  letter-spacing: 2rpx;
+}
+

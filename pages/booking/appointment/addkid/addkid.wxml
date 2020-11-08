@@ -1,0 +1,60 @@
+<!--pages/booking/appointment/addkid/addkid.wxml-->
+
+<view class='content-page' style='height:{{pageContantHeight}}rpx;padding-top:{{customNavBarHeight}}rpx'>
+    <!-- <navigation-bar title='{{bar}}' class="navigationBar {{android?'android':'nav'}} {{iosX?'iosx':''}}"></navigation-bar>
+    <view class="{{android?'top_blank_android':'top_blank_nav'}} {{iosX?'top_blank_iosx':''}}"></view> -->
+    <navbar noback='false' title='{{bar}}' bgColor='#fff' height='{{customNavBarHeight}}'></navbar>
+    <view class='info-list'>
+        <view class='list-area'>
+            <view class='list'>
+                <view class='title'>孩子姓名</view>
+                <input placeholder='请输入孩子姓名' bindinput="bindKeyInput" value='{{name}}'></input>
+            </view>
+            <view class='list'>
+                <view class='title'>选择生日</view>
+                <view class="section">
+                    <!-- <view class="section__title">日期选择器</view> -->
+                    <picker
+                        mode="date"
+                        value="{{date}}"
+                        start="2000-09-01"
+                        end="{{nowdate}}"
+                        bindchange="bindDateChange"
+                    >
+                        <view class="picker">{{date}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class='list'>
+                <view class='title'>孩子性别</view>
+                <radio-group class="radio-group rela-radio-group" bindchange="sexRadioChange">
+                    <label class="radio rela-radio">
+                        <!-- <radio id='sex' value="{{item.name}}" checked="{{item.checked}}" class='redio-dot'/>{{item.value}} -->
+                        <radio id='sex' value='男生' checked="{{checkboy}}" class='redio-dot'/> <text>男生</text> 
+                        <radio id='sex' value='女生' checked="{{checkgirl}}" class='redio-dot'/> <text>女生</text> 
+                    </label>
+                </radio-group>
+            </view>
+            <view class='list'>
+                <view class='title'>亲子关系</view>
+                <radio-group class="radio-group rela-radio-group" bindchange="radioChange">
+                    <label class="radio rela-radio">
+                        <!-- <radio value="{{item.name}}" checked="{{item.checked}}" class='redio-dot'/>{{item.value}} -->
+                        <radio id='rela' value="爸爸" checked="{{checkfather}}" class='redio-dot'/> <text>爸爸</text> 
+                        <radio id='rela' value="妈妈" checked="{{checkmother}}" class='redio-dot'/> <text>妈妈</text> 
+                        <radio id='rela' value="其他" checked="{{checkother}}" class='redio-dot'/>  <text>其他</text> 
+                    </label>
+                </radio-group>
+            </view>
+        </view>
+    </view>
+    <view class='button-area'>
+        <button bindtap='saveKid'>保存</button>
+        <!-- <a bindtap='deleteKid' wx:if='{{candel}}'>删除孩子</a> -->
+    </view>
+    <view class='error-note' wx:if='{{errorInfo}}'>
+        <view class='model'>
+            <text>还没填完鸭</text>
+        </view>
+    </view>
+</view>

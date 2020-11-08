@@ -1,0 +1,12 @@
+<!--component/reservableitems/x-scroll/x-scrolll.wxml-->
+<view class='content-page' >
+  <text class='title'>校区展示</text>
+  <scroll-view class="scroll-x" scroll-x style="width: 100%">
+    <view class='content'>
+      <view class='list' wx:for="{{imgs}}" bindtap='showActiDetail'>
+        <view class='list-detail' style="background-image: url('{{item.dealImg}}')" ></view>
+        <text class='title'>{{item.tag}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,29 @@
+<!--component/activities/acti-banner/acti-banner.wxml-->
+<view class='content-page'>
+  <view class='title' bindtap='showLst'>
+    <text>精彩活动</text>
+    <image src='https://bm-mini.oss-cn-beijing.aliyuncs.com/demo/icon_chevron_right_dark%402x.png'></image>
+  </view>
+  <scroll-view class="scroll-x" scroll-x style="width: 100%">
+    <view class='content'>
+      <view class='list'  wx:for="{{actv}}"   bindtap='showActiDetail' data-actvid="{{item.id}}">
+        <view class='bg-image' style="background-image: url('{{item.sessioninfo.dealCover}}')" >
+          <view class='list-detail'>
+            <view class='info'>
+              <view class='sort'>{{item.sessioninfo.category.title}}</view>
+              <block wx:if="{{item.sessioninfo.hasAge}}">
+                <view class='age'>{{item.sessioninfo.alb}}-{{item.sessioninfo.aub}} 岁</view>
+              </block>
+              <block wx:else>
+                <view class='age'>不限年龄</view>
+              </block>
+            </view>
+            <view class='apply'>
+              <view class='name'>{{item.sessioninfo.title}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

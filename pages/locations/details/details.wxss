@@ -1,0 +1,221 @@
+/* pages/locations/details/details.wxss */
+.content-page {
+  padding: 40rpx;
+}
+.title-area {
+  display: flex;
+  flex-direction: column;
+}
+.title-area .title {
+  margin-bottom: 16rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 40rpx;
+  color: #0D0D0D;
+}
+.title-area .address {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #595959;
+}
+.title-area .tags {
+  margin-top: 32rpx;
+  display: flex;
+  flex-direction: row;
+}
+.title-area .tags text {
+  margin-right: 24rpx;
+  padding: 4rpx 16rpx;
+  border: 1rpx solid #979797;
+  border-radius: 8rpx;
+
+  font-family: PingFangSC-Medium;
+  font-size: 22rpx;
+  color: #A6A6A6;
+  text-align: center;
+}
+.content {
+  margin-top: 49rpx;
+  padding-bottom: 48rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+.subtitle {
+  margin-bottom: 32rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #0D0D0D;
+}
+.address {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #595959;
+}
+
+.school-detail {
+  display: flex;
+  flex-direction: row;
+}
+.school-detail .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 184rpx;
+  margin-right: 80rpx;
+}
+.school-detail .school-img {
+  margin-bottom: 16rpx;
+  width: 184rpx;
+  height: 122rpx;
+  background: #ddd;
+}
+.school-detail text {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #A6A6A6;
+}
+
+.facility-detail {
+  display: flex;
+  flex-direction: row;
+}
+.facility-detail .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 96rpx;
+  margin-right: 48rpx;
+}
+.facility-detail .facility-img {
+  margin-bottom: 16rpx;
+  width: 48rpx;
+  height: 48rpx;
+  background: #ddd;
+}
+.facility-detail text {
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #A6A6A6;
+}
+.content-item {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: flex-start;
+  align-items: center;
+}
+.bg-color {
+  width: 96rpx;
+  height: 96rpx;
+  background: #f0f5fd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+}
+.content-align-center {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.content-mid {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-around;
+} 
+.content-mid image {
+  width: 16rpx;
+  height: 26rpx;
+}
+
+.content-row {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.c-loc-facility-item {
+	font-family: SFProText-Regular;
+	font-size: 22rpx;
+	color: #737373;
+  width: 96rpx;
+  height: 96rpx;
+}
+.c-loc-facility-item text {
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #A6A6A6;
+}
+.c-loc-facility-item image {
+	width: 48rpx;
+	height: 48rpx;
+
+	margin-bottom: 16rpx;
+}
+
+text.c-loc-facility-more-num {
+  font-family: SFProText-Bold;
+  font-size: 36rpx;
+  color: #80AEFF;
+	
+	margin-bottom: 22rpx;
+}
+
+.c-loc-facility-more {
+	font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #A6A6A6;
+}
+.cert-item {
+  width: 184rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.certi-list {
+  display: flex;
+  flex-direction: row;
+}
+.cert-img {
+  height: 122rpx;
+  width: 184rpx;
+}
+.cert-name {
+  margin-top: 16rpx;
+  color: #8C8C8C;
+  font-size: 26rpx;
+}
+.faci-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.faci-item {
+  height: 96rpx;
+  display: flex;
+  margin-right: 48rpx;
+  flex-direction: column;
+  align-items: center;
+}
+.faci-name {
+  color: #A6A6A6;
+  font-size: 22rpx;
+  margin-top: 16rpx;
+}
+.faci-img {
+  width: 48rpx;
+  height: 48rpx;
+}
+.faci-more-text {
+  width: 48rpx;
+  height: 48rpx;
+  font-size: 36rpx;
+  color: #80AEFF;
+  font-family: SFProText-Bold;
+}

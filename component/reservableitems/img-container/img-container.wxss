@@ -1,0 +1,89 @@
+/* component/class-banner/img-containger/img-container.wxss */
+.clsdet-img {
+
+}
+
+.clsdet-img swiper {
+	width: 750rpx;
+	height: 928rpx;
+}
+
+.clsdet-img swiper .slide-image{
+	width: 750rpx;
+	height: 928rpx;
+}
+.exp-info-title {
+  position: absolute;
+  width: 75%;
+  /* top: 718rpx; */
+  top: 670rpx;
+  left: 40rpx;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.text-m {
+  top: 670rpx;
+}
+.text-l {
+  top: 718rpx;
+}
+.title {
+  color: #fff;
+  font-size: 44rpx;
+  margin-top: 16rpx;
+}
+.type {
+  color: #fff;
+  font-size: 26rpx;
+  opacity: 0.7;
+}
+.indicator-view {
+  width: 96rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 782rpx;
+  right: 40rpx;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.4;
+  background-color: #000000;
+  border-radius: 8rpx;
+}
+.indicator-text {
+  color: #B2B2B2;
+  font-size: 22rpx;
+  opacity: 1;
+}
+
+/* .clsdet-img .content-item {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.clsdet-img .content-row {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.clsdet-img .clsdet-detail {
+
+}
+
+.clsdet-img .clsdet-detail .clsdet-detail-img {
+	width: 750rpx;
+	height: 504rpx;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-color: #ddd;
+} */
+
